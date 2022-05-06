@@ -1,0 +1,7 @@
+name: LevelSystem
+version: '${project.version}'
+main: dev.tim.levelsystem.LevelSystem
+api-version: 1.18
+authors: [ Tim ]
+commands:
+  level:
