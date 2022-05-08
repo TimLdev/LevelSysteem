@@ -3,11 +3,17 @@ package dev.tim.levelsystem.listener;
 import dev.tim.levelsystem.LevelSystem;
 import dev.tim.levelsystem.gui.LevelGUI;
 import dev.tim.levelsystem.gui.LevelRewardsGUI;
-import org.bukkit.ChatColor;
+import org.bukkit.*;
+import org.bukkit.enchantments.Enchantment;
+import org.bukkit.entity.EntityType;
+import org.bukkit.entity.Firework;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryClickEvent;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.FireworkMeta;
+import org.bukkit.inventory.meta.ItemMeta;
 
 public class GUIListener implements Listener {
 
@@ -53,6 +59,8 @@ public class GUIListener implements Listener {
                 if(level >= 5 && claimedLevel5 == false){
                     player.closeInventory();
                     player.sendMessage(main.prefix + ChatColor.GREEN + "Level 5 beloning ontvangen!");
+                    player.getInventory().addItem(new ItemStack(Material.GOLDEN_APPLE, 16));
+                    main.spawnFireworks(player.getLocation(), 1);
                     main.getConfig().set("Levels." + player.getUniqueId() + ".ClaimedLevel5", true);
                     main.saveConfig();
                     // ontvang beloning
@@ -71,6 +79,8 @@ public class GUIListener implements Listener {
                 if(level >= 10 && claimedLevel10 == false){
                     player.closeInventory();
                     player.sendMessage(main.prefix + ChatColor.GREEN + "Level 10 beloning ontvangen!");
+                    player.getInventory().addItem(new ItemStack(Material.DIAMOND, 32));
+                    main.spawnFireworks(player.getLocation(), 2);
                     main.getConfig().set("Levels." + player.getUniqueId() + ".ClaimedLevel10", true);
                     main.saveConfig();
                     // ontvang beloning
@@ -89,6 +99,8 @@ public class GUIListener implements Listener {
                 if(level >= 15 && claimedLevel15 == false){
                     player.closeInventory();
                     player.sendMessage(main.prefix + ChatColor.GREEN + "Level 15 beloning ontvangen!");
+                    player.getInventory().addItem(new ItemStack(Material.EMERALD, 64));
+                    main.spawnFireworks(player.getLocation(), 3);
                     main.getConfig().set("Levels." + player.getUniqueId() + ".ClaimedLevel15", true);
                     main.saveConfig();
                     // ontvang beloning
@@ -107,6 +119,8 @@ public class GUIListener implements Listener {
                 if(level >= 20 && claimedLevel20 == false){
                     player.closeInventory();
                     player.sendMessage(main.prefix + ChatColor.GREEN + "Level 20 beloning ontvangen!");
+                    player.getInventory().addItem(new ItemStack(Material.NETHERITE_INGOT, 5));
+                    main.spawnFireworks(player.getLocation(), 4);
                     main.getConfig().set("Levels." + player.getUniqueId() + ".ClaimedLevel20", true);
                     main.saveConfig();
                     // ontvang beloning
@@ -125,6 +139,8 @@ public class GUIListener implements Listener {
                 if(level >= 25 && claimedLevel25 == false){
                     player.closeInventory();
                     player.sendMessage(main.prefix + ChatColor.GREEN + "Level 25 beloning ontvangen!");
+                    player.getInventory().addItem(new ItemStack(Material.TOTEM_OF_UNDYING, 1));
+                    main.spawnFireworks(player.getLocation(), 5);
                     main.getConfig().set("Levels." + player.getUniqueId() + ".ClaimedLevel25", true);
                     main.saveConfig();
                     // ontvang beloning
@@ -143,6 +159,8 @@ public class GUIListener implements Listener {
                 if(level >= 30 && claimedLevel30 == false){
                     player.closeInventory();
                     player.sendMessage(main.prefix + ChatColor.GREEN + "Level 30 beloning ontvangen!");
+                    player.getInventory().addItem(new ItemStack(Material.TRIDENT, 1));
+                    main.spawnFireworks(player.getLocation(), 6);
                     main.getConfig().set("Levels." + player.getUniqueId() + ".ClaimedLevel30", true);
                     main.saveConfig();
                     // ontvang beloning
@@ -161,6 +179,8 @@ public class GUIListener implements Listener {
                 if(level >= 35 && claimedLevel35 == false){
                     player.closeInventory();
                     player.sendMessage(main.prefix + ChatColor.GREEN + "Level 35 beloning ontvangen!");
+                    player.getInventory().addItem(new ItemStack(Material.ELYTRA, 1));
+                    main.spawnFireworks(player.getLocation(), 7);
                     main.getConfig().set("Levels." + player.getUniqueId() + ".ClaimedLevel35", true);
                     main.saveConfig();
                     // ontvang beloning
