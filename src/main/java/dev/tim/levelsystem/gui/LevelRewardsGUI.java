@@ -30,6 +30,9 @@ public class LevelRewardsGUI {
 
         // FRAME
         ItemStack frame = new ItemStack(Material.BLACK_STAINED_GLASS_PANE);
+        ItemMeta frameMeta = frame.getItemMeta();
+        frameMeta.setDisplayName(" ");
+        frame.setItemMeta(frameMeta);
         for(int i : new int[]{0,1,2,3,4,5,6,7,8,9,17,18,19,20,21,23,24,25,26}){
             gui.setItem(i, frame);
         }
