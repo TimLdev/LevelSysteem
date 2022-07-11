@@ -1,5 +1,6 @@
 # LevelSystem
 *Plugin language is: NL/Dutch*
+*Recommended Minecraft version: 1.18+*
 
 **Level up and get level rewards.**
 
