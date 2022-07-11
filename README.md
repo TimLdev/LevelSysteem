@@ -1,4 +1,4 @@
-# LevelSysteem
+# LevelSystem
 *Plugin language is: Nederlands/Dutch*
 
 **Level up en ontvang leuke level beloningen.**
