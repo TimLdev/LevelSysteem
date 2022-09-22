@@ -18,7 +18,7 @@ Exp is gained by killing monsters and mining ores.
 - In this file you can adjust the **Level**, **Exp** and the **Required Exp** of the players.
 
 ## Contact
-Discord: **£Tim#0221**
+Discord: **TIM#0221**
 
 ## Scoreboard
 ![image](https://user-images.githubusercontent.com/83028453/167137204-87ae06a7-97bc-4c29-8f20-5c8defe371ab.png)
